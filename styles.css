@@ -1,9 +1,7 @@
 /* General styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background: url ('https://imgur.com/a/ilAS5Ct')
-no-repeat center center fixed;
-    background-size: cover;
+    background: linear-gradient(to bottom right, #4caf50, #81c784);
     margin: 0;
     padding: 0;
     display: flex;
