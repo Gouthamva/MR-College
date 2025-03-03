@@ -22,7 +22,6 @@ function calculateInternalMarks() {
     let b = a / 4;
     let c = 30 - b;
     let result = c * 5;
-    let final  = result ÷2;
 
     // Display the result
    document.getElementById('result').textContent =` Your external requirement is: ${result.toFixed(2)}`;
