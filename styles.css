@@ -72,7 +72,7 @@ input::placeholder {
 /* Button styles */
 button {
     padding: 12px 20px;
-    background-color: #COCOCO;
+    background-color: #ff0606;
     color: white;
     border: none;
     border-radius: 5px;
@@ -84,7 +84,7 @@ button {
 }
 
 button:hover {
-    background-color: #808080;
+    background-color: #610000;
 }
 
 /* Result styles */
