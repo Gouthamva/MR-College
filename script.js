@@ -24,7 +24,7 @@ function calculateInternalMarks() {
     let result = c * 5;
 
     // Display the result
-   document.getElementById('result').textContent = Your external requirement is: ${result.toFixed(2)}`;
+   document.getElementById('result').textContent = Your external requirement is: ${result.toFixed(2)};
 }
 
 // Add event listener to the button
