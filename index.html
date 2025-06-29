@@ -1,53 +1,65 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>External Requirement Calculator</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>External Requirement Calculator</title>
+
+    <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-  <!-- Splash Animation -->
-  <div id="splash">
-    <lottie-player
-      src="Simple-text-[remix].json"  <!-- 👈 No folder -->
-      background="transparent"
-      speed="1"
-      style="width: 300px; height: 300px;"
-      autoplay
-    ></lottie-player>
-  </div>
 
-  <!-- Calculator UI -->
-  <div class="container" id="calculator" style="display: none;">
-    <h1>Yashwanth Atluri's Calculator</h1>
-    <h2>EXTERNAL REQUIREMENT CALCULATOR</h2>
-    <form id="marksForm">
-      <div class="input-group">
-        <label for="internal1">Enter Internal 1:</label>
-        <input type="number" id="internal1" name="internal1" placeholder="Enter marks for Internal 1" required>
-      </div>
-      <div class="input-group">
-        <label for="internal2">Enter Internal 2:</label>
-        <input type="number" id="internal2" name="internal2" placeholder="Enter marks for Internal 2" required>
-      </div>
-      <div class="input-group">
-        <label for="internal3">Enter Internal 3:</label>
-        <input type="number" id="internal3" name="internal3" placeholder="Enter marks for Internal 3" required>
-      </div>
-      <button type="button" id="calculateBtn">Calculate</button>
-    </form>
-    <div id="result"></div>
-  </div>
+    <div class="container">
 
-  <script src="script.js"></script>
-  <script>
-    const splashPlayer = document.querySelector("lottie-player");
-    splashPlayer.addEventListener("complete", () => {
-      document.getElementById("splash").style.display = "none";
-      document.getElementById("calculator").style.display = "block";
-    });
-  </script>
+        <h1>Yashwanth Atluri's Calculator</h1>
+
+        <h2>EXTERNAL REQUIREMENT CALCULATOR</h2>
+
+        <form id="marksForm">
+
+            <div class="input-group">
+
+                <label for="internal1">Enter Internal 1:</label>
+
+                <input type="number" id="internal1" name="internal1" placeholder="Enter marks for Internal 1" required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label for="internal2">Enter Internal 2:</label>
+
+                <input type="number" id="internal2" name="internal2" placeholder="Enter marks for Internal 2" required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label for="internal3">Enter Internal 3:</label>
+
+                <input type="number" id="internal3" name="internal3" placeholder="Enter marks for Internal 3" required>
+
+            </div>
+
+            <button type="button" id="calculateBtn">Calculate</button>
+
+        </form>
+
+        <div id="result">
+
+            <!-- Result will be displayed here -->
+
+        </div>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
