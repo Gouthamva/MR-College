@@ -23,8 +23,15 @@ function calculateInternalMarks() {
     let c = 30 - b;
     let result = c * 5;
 
+    // Format output
+    let externalOutOf200 = result.toFixed(2);
+    let externalOutOf100 = (result / 2).toFixed(2);
+
     // Display the result
-   document.getElementById('result').textContent =` Your external requirement is: ${result.toFixed(2)}`;
+    document.getElementById('result').innerHTML = `
+        Your external requirement is: <strong>${externalOutOf200} / 200</strong><br>
+        (Per paper <strong>${externalOutOf100} / 100</strong>)
+    `;
 }
 
 // Add event listener to the button
