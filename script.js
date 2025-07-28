@@ -29,8 +29,8 @@ function calculateInternalMarks() {
 
     // Display the result
     document.getElementById('result').innerHTML = `
-        Your external requirement is: <strong>${externalOutOf200} / 200</strong><br>
-        (Per paper <strong>${externalOutOf100} / 100</strong>)
+        Your external requirement is:${externalOutOf200} / 200<br>
+        (Per paper ${externalOutOf100} / 100)
     `;
 }
 
